@@ -2,7 +2,7 @@ import { Sidebar } from 'flowbite-react';
 import { HiUser, HiArrowSmRight, HiDocumentText, HiOutlineUserGroup, HiAnnotation,  HiChartPie, } from 'react-icons/hi';
 import { useEffect, useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
-import { signoutSuccess } from '../redux/user/userslice'; 
+import { signoutSuccess } from '../redux/user/userSlice.js'; 
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 

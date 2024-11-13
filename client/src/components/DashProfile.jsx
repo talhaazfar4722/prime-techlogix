@@ -18,7 +18,7 @@ import {
   deleteUserSuccess,
   deleteUserFailure,
   signoutSuccess,
- } from '../redux/user/userslice';
+ } from '../redux/user/userSlice.js';
 import { useDispatch } from 'react-redux';
 import { HiOutlineExclamationCircle } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
