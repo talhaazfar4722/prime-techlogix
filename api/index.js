@@ -21,6 +21,7 @@ mongoose
     console.log(err);
   });
 
+  
   const __dirname = path.resolve();
 
 //To run server   
@@ -40,11 +41,13 @@ app.use('/api/post', postRoutes);
 app.use('/api/project', projectRoutes);
 app.use('/api/comment', commentRoutes);
 
+
 app.use(express.static(path.join(__dirname, '/client/dist')));
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'));
 });
+
 
 //Error handling middleware
 app.use((err,req,res,next)=>{
