@@ -73,7 +73,7 @@ export default function Header() {
       
       <Link to='/' className='self-center whitespace-nowrap text-sm sm:text-xl font-semibold text-teal-500 dark:text-white flex items-center'>
   <img src={vite} alt="" className="mr-2 w-10 h-10" />
-  <span className="py-1 text-2xl text-teal-500 font-bold">PrimeTechlogix</span>
+  <span className="py-1 text-[23px] text-teal-500 font-bold">PrimeTechlogix</span>
 </Link>
 
          {/* for search */}
