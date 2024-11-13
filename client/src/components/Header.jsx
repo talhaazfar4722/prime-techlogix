@@ -73,7 +73,7 @@ export default function Header() {
       
       <Link to='/' className='self-center whitespace-nowrap text-sm sm:text-xl font-semibold text-teal-500 dark:text-white flex items-center'>
   <img src={vite} alt="" className="mr-2 w-10 h-10" />
-  <span className="py-1 text-[23px] text-teal-500 font-bold">PrimeTechlogix</span>
+  <span className="py-1 text-[21px] sm:text-[23px] text-teal-500 font-bold">PrimeTechlogix</span>
 </Link>
 
          {/* for search */}
@@ -87,9 +87,9 @@ export default function Header() {
              />
          </form>
          
-         {/* <Button className='w-12 h-10 lg:hidden' color='gray' pill>
-            <AiOutlineSearch/>
-         </Button> */}
+
+            {/* <AiOutlineSearch className='text-2xl sm:hidden'/> */}
+         
       
        {/* light mode dark mode */}
          <div className='flex gap-2 md:order-2' >
@@ -175,6 +175,7 @@ export default function Header() {
                 </Link>
 
     </Navbar.Collapse>
+    
     </Navbar>
   )
 }
