@@ -73,7 +73,7 @@ export default function Header() {
       
       <Link to='/' className='self-center whitespace-nowrap text-sm sm:text-xl font-semibold text-teal-500 dark:text-white flex items-center'>
   <img src={vite} alt="" className="mr-2 w-10 h-10" />
-  <span className="py-1 text-1xl text-teal-500 font-bold">PrimeTechlogix</span>
+  <span className="py-1 text-2xl text-teal-500 font-bold">PrimeTechlogix</span>
 </Link>
 
          {/* for search */}
@@ -137,36 +137,43 @@ export default function Header() {
             <Navbar.Toggle/>
          </div>
             <Navbar.Collapse>
+
+                <Link to='/' >
                 <Navbar.Link active={path === '/' } as={'div'}>
-                    <Link to='/' >
                        Home
-                    </Link>
                 </Navbar.Link>
-                <Navbar.Link active={path === '/about'} as={'div'}>
-                    <Link to='/about'>
-                       About Us
-                    </Link>
-                </Navbar.Link>
-                <Navbar.Link active={path === '/search'} as={'div'}>
-                    <Link to='/search'>
-                       Blogs
-                    </Link>
-                </Navbar.Link>
-                <Navbar.Link active={path === '/services'} as={'div'} >
-                    <Link to='/services'>
-                       Services
-                    </Link>
-                </Navbar.Link>
-                <Navbar.Link active={path === '/projects'} as={'div'} onClick={handleProjectsClick}>
-                <Link to='/projects'>
-                Projects
                 </Link>
-              </Navbar.Link>       
-                <Navbar.Link active={path === '/contact'} as={'div'}>
-                    <Link to='/contact'>
-                       Contact Us
-                    </Link>
+
+                <Link to='/about'>
+                <Navbar.Link active={path === '/about'} as={'div'}>
+                       About Us
                 </Navbar.Link>
+                </Link>
+
+                <Link to='/search'>
+                <Navbar.Link active={path === '/search'} as={'div'}>
+                       Blogs
+                </Navbar.Link>
+                </Link>
+
+                <Link to='/services'>
+                <Navbar.Link active={path === '/services'} as={'div'} >
+                       Services
+                </Navbar.Link>
+                </Link>
+
+                <Link to='/projects'>
+                <Navbar.Link active={path === '/projects'} as={'div'} onClick={handleProjectsClick}>
+                Projects
+              </Navbar.Link>  
+              </Link>
+
+              <Link to='/contact'>
+                <Navbar.Link active={path === '/contact'} as={'div'}>
+                       Contact Us
+                </Navbar.Link>
+                </Link>
+
     </Navbar.Collapse>
     </Navbar>
   )

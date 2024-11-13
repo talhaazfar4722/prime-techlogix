@@ -1,20 +1,26 @@
 import React from 'react'
 import Newsletter from '../components/Newsletter'
 import Title from '../components/Title'
-import about_img from '../assets/about_img.png'
+import terms from '../assets/terms.jpeg'
 
 
 const Terms = () => {
   return (
     <div>
-    <div className='p-4'>
+    <div className=''>
+
+    <img
+          src={terms}
+  
+          className='mt-10 sm:max-h-[400px] border-t w-full object-cover'
+        />
         
       <div className='text-2xl text-center pt-8 '>
         <Title text1={"TERMS"} text2={' AND CONDITIONS'}/>
       </div>
       
        
-       <div className='flex flex-col justify-center gap-6 mt-5'>
+       <div className='flex flex-col justify-center gap-6 mt-5 p-2'>
         
         <b>Please read these Terms and Conditions carefully before using our services. </b> 
         <b>1. Acceptance of Terms </b>

@@ -70,13 +70,13 @@ export default function Home() {
       </div>
 
 {/* about us */}
-      <div className='max-w-6xl mx-auto p-3 flex flex-col gap-8 py-7'>
+      <div className='max-w-6xl mx-auto sm:p-3 flex flex-col gap-8 py-7'>
         
           <div className='flex flex-col gap-6'>
             
           <div className='my-10 flex flex-col md:flex-row gap-16'>
           <img className="shadow-2xl w-full md:max-w-[450px]  rounded-tl-[30px] rounded-br-[30px] hover:scale-105 transition-all duration-700  cursor-pointer" src={about_img} alt=""  style={{ boxShadow: '10px 10px 20px rgba(0, 0, 0, 0.5)' }} />
-        <div className='flex flex-col justify-center gap-6 md:w-2/4'>
+        <div className='flex flex-col justify-center gap-6 md:w-2/4 p-2'>
         <p className='text-1xl md:text-lg'>Know About Us</p>
         <div className='text-2xl text-teal-500 font-bold '>
             <Title text1={"ABOUT"} text2={' PRIME TECHLOGIX'}/>
@@ -133,14 +133,14 @@ export default function Home() {
      
 
       {/* Services */}
-      <div className='max-w-6xl mx-auto p-3 flex flex-col gap-8 py-7'>
+      <div className='max-w-6xl mx-auto sm:p-3 flex flex-col gap-8 py-7'>
         
           <div className='flex flex-col gap-6'>
             
           <div className='my-10 flex flex-col md:flex-row gap-16'>
           <img className="sm:hidden shadow-2xl w-full md:max-w-[450px] rounded-tl-[30px] rounded-br-[30px] hover:scale-105 transition-all duration-700  cursor-pointer" src={our_services} alt=""  style={{ boxShadow: '10px 10px 20px rgba(0, 0, 0, 0.5)' }} />
       
-        <div className='flex flex-col justify-center gap-6 md:w-2/4'>
+        <div className='flex flex-col justify-center gap-6 md:w-2/4 p-2'>
         <p className='text-1xl md:text-lg'>What We’re Offering</p>
         <div className='text-2xl text-teal-500 font-bold '>
             <Title text1={"SERVICES WE’"} text2={' RE PROVIDING'}/>

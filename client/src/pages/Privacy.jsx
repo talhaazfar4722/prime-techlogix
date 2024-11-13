@@ -1,20 +1,23 @@
 import React from 'react'
 import Newsletter from '../components/Newsletter'
 import Title from '../components/Title'
-
+import privacy from '../assets/privacy.jpg'
 
 
 const Privacy = () => {
   return (
     <div>
-    <div className='p-4'>
-       
+    <div className=''>
+    <img
+          src={privacy}
+  
+          className='mt-10 sm:max-h-[600px] w-full object-cover'
+        />
       <div className='text-2xl text-center pt-8 '>
         <Title text1={"PRIVACY"} text2={' POLICY'}/>
       </div>
-      
        
-       <div className='flex flex-col justify-center gap-6 mt-5 '>
+       <div className='flex flex-col justify-center gap-6 mt-5 p-2 '>
         <p>
         <b>Prime Techlogix </b> 
         respects your privacy and is committed to protecting your personal information. This Privacy Policy outlines how we collect, use, and disclose your information when you use our website, services, or interact with us.

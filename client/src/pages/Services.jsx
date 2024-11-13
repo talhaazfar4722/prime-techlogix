@@ -12,31 +12,38 @@ import { Button } from 'flowbite-react';
 import { Link } from 'react-router-dom';
 import Newsletter from '../components/Newsletter';
 import Testimonials from '../components/Testimonials';
+import our_services from '../assets/our_services.webp'
 
 export default function Services() {
   return (
     <div>
     <div className="min-h-screen   ">
-      <div className='flex flex-col items-center'>
-  <div className="p-8 md:w-2/3 text-center ">
-    <p className="text-center">Design. Development. Consultancy.</p>
-    <div className="text-2xl font-bold text-teal-500 text-center">
-      <Title text1={"WE GOT"} text2={' YOU COVERED'}/>
-    </div>
-    <p className="leading-relaxed tracking-wide text-center">We bring you award-winning products, advanced UI / UX, and world-class web talent and mobile
+
+      <div className='sm:mx-4 text-center sm:text-start'>
+        <div className='my-10 flex flex-col md:flex-row gap-16'>
+       <img className='w-full md:max-w-[450px] shadow-2xl  hover:scale-105 transition-all duration-700  cursor-pointer ' src={our_services} alt="" style={{ boxShadow: '10px 10px 20px rgba(0, 0, 0, 0.5)' }}/>
+       <div className='flex flex-col justify-center gap-6 md:w-2/4'>
+       <p className='text-1xl'>Design. Development. Consultancy.</p>
+        <div className='text-2xl text-teal-500 font-bold '>
+            <Title text1={"WE GOT"} text2={' YOU COVERED'}/>
+          </div>
+        <p>We bring you award-winning products, advanced UI / UX, and world-class web talent and mobile
     platforms that bridge the gap between the creative world and technology. At Prime Techlogix, our
     solutions become the kind of technology that others are promoting.</p>
-  </div>
-  </div>
+         </div>
+      </div>
+      </div>
+
+
      <div className='p-3 bg-slate-200 dark:bg-gray-800'>
         <Clients/>
         </div>
 
-      <div className='pt-8 p-4'>
+      <div className='pt-8 '>
         <div className='flex flex-col sm:flex-row '>
         <img  className='w-full sm:w-1/2 sm:hidden' src={web_dev}  alt="" />
         {/* Hero Left Sdide */}
-        <div className="w-full sm:w-1/2 flex p-5">
+        <div className="w-full sm:w-1/2 flex p-2">
         <div className=''>
             <div className='flex gap-2'>
                 <p className='font-bold text-[30px]'>01</p>
@@ -86,7 +93,7 @@ export default function Services() {
       <div className='flex flex-col sm:flex-row '>
         <img  className='w-full sm:w-1/2 ' src={app_dev}  alt="" />
         {/* Hero Left Sdide */}
-        <div className="w-full sm:w-1/2 flex p-5">
+        <div className="w-full sm:w-1/2 flex p-2">
         <div className=''>
             <div className='flex gap-2'>
                 <p className='font-bold text-[30px]'>02</p>
@@ -133,7 +140,7 @@ export default function Services() {
       <div className='flex flex-col sm:flex-row '>
         <img  className='w-full sm:w-1/2 sm:hidden' src={ui_ux}  alt="" />
         {/* Hero Left Sdide */}
-        <div className="w-full sm:w-1/2 flex p-5">
+        <div className="w-full sm:w-1/2 flex p-2">
         <div className=''>
             <div className='flex gap-2'>
                 <p className='font-bold text-[30px]'>03</p>

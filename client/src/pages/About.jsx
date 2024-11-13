@@ -8,10 +8,10 @@ const About = () => {
   return (
     <>
     <div className='min-h-screen'>
-      <div className='p-4'>
+      <div className=''>
       <div className='my-10 flex flex-col md:flex-row gap-16'>
-       <img className='w-full md:max-w-[450px] ' src={about_img} alt="" />
-       <div className='flex flex-col justify-center gap-6 md:w-2/4'>
+       <img className='sm:mx-4 w-full md:max-w-[450px] shadow-2xl  hover:scale-105 transition-all duration-700  cursor-pointer' src={about_img} alt="" style={{ boxShadow: '10px 10px 20px rgba(0, 0, 0, 0.5)' }} />
+       <div className='flex flex-col justify-center gap-6 md:w-2/4 p-2'>
        <p className='text-1xl'>Know About Us</p>
         <div className='text-2xl text-teal-500 font-bold '>
             <Title text1={"ABOUT"} text2={' PRIME TECHLOGIX'}/>
@@ -34,7 +34,7 @@ const About = () => {
       
        </div>
       </div>
-      <div className='text-xl py-4'>
+      <div className='text-xl py-4 p-2'>
          <Title text1={'WHY'} text2={' CHOOSE US ?'}/>
       </div>
       <div className='flex flex-col md:flex-row text-sm mb-20'>
