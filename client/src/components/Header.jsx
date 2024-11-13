@@ -58,14 +58,7 @@ export default function Header() {
       navigate(`/search?${searchQuery}`);
     };
 
-    // for accessing project
-    const handleProjectsClick = () => {
-      if (!currentUser) {
-        alert('Please sign in to view projects.');
-        navigate('/sign-in'); // Redirect to sign-in page
-        return; // Prevent default link behavior
-      }
-    };
+    
   
 
   return (
@@ -73,7 +66,7 @@ export default function Header() {
       
       <Link to='/' className='self-center whitespace-nowrap text-sm sm:text-xl font-semibold text-teal-500 dark:text-white flex items-center'>
   <img src={vite} alt="" className="mr-2 w-10 h-10" />
-  <span className="py-1 text-[21px] sm:text-[23px] text-teal-500 font-bold">PrimeTechlogix</span>
+  <span className="py-1 text-[20px] sm:text-[23px] text-teal-500 font-bold">PrimeTechlogix</span>
 </Link>
 
          {/* for search */}
@@ -162,8 +155,14 @@ export default function Header() {
                 </Navbar.Link>
                 </Link>
 
-                <Link to='/projects'>
-                <Navbar.Link active={path === '/projects'} as={'div'} onClick={handleProjectsClick}>
+                <Link
+                 to={currentUser ? '/projects' : '/sign-in'} 
+                onClick={() => {
+                if (!currentUser) {
+                  alert('Please sign in to view projects.');
+                }
+              }}>
+                <Navbar.Link active={path === '/projects'} as={'div'} >
                 Projects
               </Navbar.Link>  
               </Link>
